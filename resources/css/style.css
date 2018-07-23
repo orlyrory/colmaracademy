@@ -1,0 +1,98 @@
+html {
+   font-family:  Helvetica;
+    font-size: 16px;
+}
+
+body {
+
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.flex-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.flex-nav-logo {
+    padding-left: 24px;
+}
+
+.flex-nav-logo img {
+    height: 2em;
+}
+
+.flex-nav-logo p {
+    text-transform: uppercase;
+    color: darkgray;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+.flex-nav-logo p span:nth-child(1) {
+    color: black;
+    font-weight: bold;
+}
+
+.flex-nav-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.flex-nav-container li {
+    padding-right: 16px;
+}
+
+.flex-nav-container li:nth-last-child(1) {
+    padding-right: 24px;
+}
+
+/* HERO IMAGE SECTION */
+
+header {
+    background-color: lightgray;
+}
+
+.flex-top-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .flex-left-content {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding: 32px 24px;
+}
+
+header .flex-left-content img {
+    width: 100%;
+}
+
+header .flex-header-container {
+    text-align: center;
+}
