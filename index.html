@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700" rel="stylesheet">
     <title>Colmar Academy</title>
 </head>
     
@@ -110,7 +111,7 @@
             <div class="flex-box-item">
                 <img src="./resources/images/course-computer-art.jpg" alt="Person holding phone">
                 <div class="flex-box-text">
-                    <h3>Software engineering</h3>
+                    <h3>Computer Sciences</h3>
                     <h4>Courses</h4>
                     <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
@@ -118,7 +119,7 @@
             <div class="flex-box-item">
                 <img src="./resources/images/course-design.jpg" alt="Person holding old film camera">
                 <div class="flex-box-text">
-                    <h3>Software engineering</h3>
+                    <h3>Photography</h3>
                     <h4>Courses</h4>
                     <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
@@ -126,7 +127,7 @@
             <div class="flex-box-item">
                 <img src="./resources/images/course-data.jpg" alt="Laptop  with data on screen">
                 <div class="flex-box-text">
-                    <h3>Software engineering</h3>
+                    <h3>Dentistry</h3>
                     <h4>Courses</h4>
                     <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
@@ -134,7 +135,7 @@
             <div class="flex-box-item">
                 <img src="./resources/images/course-business.jpg" alt="Chess pieces">
                 <div class="flex-box-text">
-                    <h3>Software engineering</h3>
+                    <h3>Chess Masterclass</h3>
                     <h4>Courses</h4>
                     <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
@@ -142,7 +143,7 @@
             <div class="flex-box-item">
                 <img src="./resources/images/course-marketing.jpg" alt="Smart watch on person's wrist">
                 <div class="flex-box-text">
-                    <h3>Software engineering</h3>
+                    <h3>VCR Sciences</h3>
                     <h4>Courses</h4>
                     <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
@@ -152,29 +153,37 @@
 
     <!-- 60/40 SECOND SPLIT CONTENT SECTION -->
 
-    <div class="split-container">
-        <h2></h2>
+    <div class="flex-split-container">
+        <h1>Thesis exhibit</h1>
         <div class="flex-split-content-container">
             <div class="flex-left-content">
-                <video width="60%" height="auto" controls>
+                <video width="100%" height="auto" autoplay>
                 <source src="./resources/videos/thesis.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h4>Reimagine urban</h4>
+                <h2>Reimagine urban</h2>
                 <p>"Et fore minim hic eiusmod. Aliquip 
                     ipsum ingeniis pariatur, ullamco anim quae ea velit. Se mandaremus ad cupidatat 
                     eu quis possumus et coniunctione. Ut quis laborum arbitror."</p>
             </div>
             <div class="flex-column-container">
                 <div class="flex-column-content">
-                    <img src="./resources/images/thesis-fisma.jpg" alt="Messy desk with phone and papers">
-                    <h3>Fisma: Design and Prototype</h3>
-                    <p>Designer showcase of new prototype product</p>
+                    <div class="flex-column-image">
+                        <img src="./resources/images/thesis-fisma.jpg" alt="Messy desk with phone and papers">
+                    </div>
+                    <div class="flex-column-text">
+                        <h3>Fisma: Design and Prototype</h3>
+                        <p>Designer showcase of new prototype product</p>
+                    </div>
                 </div>
                 <div class="flex-column-content">
-                    <img src="./resources/images/thesis-now-and-then.jpg" alt="Skyscraper in gentle fog">
-                    <h3>Now and then</h3>
-                    <p>Research study about New York</p>
+                    <div class="flex-column-image">
+                        <img src="./resources/images/thesis-now-and-then.jpg" alt="Skyscraper in gentle fog">
+                    </div>
+                    <div class="flex-column-text">
+                        <h3>Now and then</h3>
+                        <p>Research study about New York</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,11 +192,13 @@
     <!-- FOOTER -->
 
     <footer>
-        <p>&#169;2016 Colmar Academy. All rights reserved</p>
-        <ul>
-            <li>Terms</li>
-            <li>Privacy</li>
-        </ul>
+        <div class="footer-content">
+            <p>&#169;&nbsp;2016 Colmar Academy. All rights reserved</p>
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
