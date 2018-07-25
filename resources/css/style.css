@@ -5,8 +5,9 @@ html {
 }
 
 h1 {
+    font-family: 'Roboto Slab', serif;
     font-size: 2.4em;
-    font-weight: 600;
+    font-weight: 700;
     color: #0D3B66;
 }
 
@@ -18,7 +19,7 @@ h2 {
 h3 {
     color: #006494;
     font-size: 1.3em;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h4 {
@@ -39,9 +40,23 @@ a {
 
 .button {
     background-color: #006494;
-    padding: 8px;
+    padding: 18px;
     color: #FEFEFE;
     border-radius: 4px;
+    font-size: 1.4em;
+}
+/* UNIVERSAL MOBILE STYLING */
+
+@media only screen and (max-width: 800px) {
+ 
+    html {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
 }
 
 /* NAVIGATION BAR */
@@ -60,7 +75,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+    height: 4em;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -101,6 +116,23 @@ nav {
 
 .flex-nav-container li:nth-last-child(1) {
     padding-right: 24px;
+}
+
+/* MOBILE NAV STYLING */
+
+@media only screen and (max-width: 800px) { 
+
+    .flex-nav-container {
+        display: none;
+    }
+    
+    .flex-mobile-nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 4em;
+    }
+    
 }
 
 /* HERO IMAGE SECTION */
@@ -150,8 +182,38 @@ header .flex-header-container .button {
     
 }
 
-/* 60/40 FIRST SPLIT CONTENT SECTION */
+/* MOBILE HERO STYLING */
 
+@media only screen and (max-width: 800px) {
+    
+    
+    .flex-top-content-container {
+        flex-direction: column;
+    }
+    
+    header .flex-hero-content {
+        width: 100%;
+        margin: 56px 0 0 0;
+    }
+    
+    header .flex-hero-content img {
+        padding: 0;    
+    }
+    
+    header .flex-header-container {
+        padding: 0;
+        margin: 0 20px;
+    }
+    
+    header .flex-header-container h1 {
+        margin: 32px 0px;
+        max-width: 100%;
+    }
+    
+}
+
+
+/* 60/40 FIRST SPLIT CONTENT SECTION */
 
 .flex-split-content-container {
     display: flex;
@@ -231,6 +293,24 @@ header .flex-header-container .button {
 
 .flex-column-text p:nth-last-child(1) {
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .flex-left-content {
+        display: none;
+    }
+    
+    .flex-column-container {
+        align-items: center;
+    }
+    
+    .flex-column-content {
+        align-items: flex-start;
+    }
+    
+    .flex-column-image {
+        max-width: 100%;
+    }
 }
 
 /* GALLERY SECTION STYLING */
@@ -328,18 +408,4 @@ footer a {
 
 .footer-content li {
     padding-right: 16px;
-}
-
-@media only screen and (max-width: 760px) { 
-
-    .flex-nav-container {
-        display: none;
-    }
-    
-.flex-mobile-nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-    
 }
