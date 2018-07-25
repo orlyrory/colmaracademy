@@ -52,12 +52,16 @@ nav {
     width: 100%;
 }
 
+.flex-mobile-nav-container {
+    display: none;
+}
+
 .flex-nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -324,4 +328,18 @@ footer a {
 
 .footer-content li {
     padding-right: 16px;
+}
+
+@media only screen and (max-width: 760px) { 
+
+    .flex-nav-container {
+        display: none;
+    }
+    
+.flex-mobile-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    
 }
