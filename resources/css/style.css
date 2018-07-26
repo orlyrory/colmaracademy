@@ -42,9 +42,17 @@ a {
     background-color: #006494;
     padding: 18px;
     color: #FEFEFE;
-    border-radius: 4px;
+    border-radius: 4px 12px;
     font-size: 1.4em;
+    transition: background-color 500ms,
+        border-radius 500ms;
 }
+
+.button:hover {
+    background-color: crimson;
+    border-radius: 12px 4px;
+}
+
 /* UNIVERSAL MOBILE STYLING */
 
 @media only screen and (max-width: 800px) {
