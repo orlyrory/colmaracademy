@@ -264,6 +264,10 @@ header .flex-header-container .button {
     padding: 16px;
 }
 
+.mobile-image {
+    display: none;
+}
+
 .flex-column-content:nth-child(1) {
     padding-top: 0px;
 }
@@ -296,20 +300,59 @@ header .flex-header-container .button {
 }
 
 @media only screen and (max-width: 800px) {
+    .flex-split-content-container {
+        padding: 16px 16px 32px 16px;;
+    }
     .flex-left-content {
         display: none;
+        max-width: 100%;
     }
     
     .flex-column-container {
         align-items: center;
+        max-width: 100%;
     }
     
     .flex-column-content {
-        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 64px; 
+        
     }
+    
+    .mobile-image {
+    display: block;
+}
+    
+    .desktop-image {
+        display: none;
+    }
+
     
     .flex-column-image {
         max-width: 100%;
+        
+    }
+    .flex-column-text {
+        max-width: 100%;
+    }
+    
+    .flex-column-content:nth-child(odd) {
+        background-color: white;
+    }
+    .flex-column-image {
+        padding: 0 0 16px 0;
+    }
+    
+    .flex-column-text {
+        font-size: 1.2em;
+        align-self: flex-start;
+        padding-left: 16px;
+
+    }
+    .flex-column-text p,
+    .flex-column-text h3 {
+
     }
 }
 
@@ -364,6 +407,57 @@ header .flex-header-container .button {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 800px) {
+    
+    .flex-box-lower-container {
+        background-color: white;
+    }
+    
+    .flex-box-lower-container h1 {
+        padding-bottom: 16px;
+    }
+    
+    .flex-box-content-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .flex-box-item {
+        min-width: 90%;
+        margin: 0;
+        margin-bottom: 8px;
+        background-color: #E1D6D0;
+        border: 1px solid black;
+    }
+    
+    .flex-box-item:nth-child(-n+3) {
+        margin-bottom: 8px;
+    }
+    
+    .flex-box-item img {
+        display: none;
+    }
+    
+    .flex-box-text {
+        max-width: 100%;
+        padding: 16px 16px 24px 16px;
+    }
+    
+    .flex-box-text h3 {
+        margin: 0;
+    }
+    
+    .flex-box-text h4,
+    .flex-box-text p {
+        display: none;
+        margin: 0;
+    }
+    
+}
+
 /* LOWER VIDEO SECOND SPLIT SECTION */
 
 .flex-split-container {
@@ -380,6 +474,10 @@ header .flex-header-container .button {
 
 .flex-left-content p {
     padding-top: 8px;
+}
+
+#flex-column-lower {
+    display: none;
 }
 
 /* FOOTER */
