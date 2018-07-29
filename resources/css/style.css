@@ -35,22 +35,26 @@ p, ul, li {
 a {
     text-decoration: none;
     color: #006494;
+}
 
+a:hover {
+    color: #731963;
+    text-decoration: underline;
 }
 
 .button {
     background-color: #006494;
     padding: 18px;
     color: #FEFEFE;
-    border-radius: 4px 12px;
+    border-radius: 4px 4px;
     font-size: 1.4em;
     transition: background-color 500ms,
-        border-radius 500ms;
+                border-radius 500ms;
 }
 
 .button:hover {
-    background-color: crimson;
-    border-radius: 12px 4px;
+    background-color: #731963;
+    /*border-radius: 12px 4px;*/
 }
 
 /* UNIVERSAL MOBILE STYLING */
@@ -69,7 +73,7 @@ a {
 
 /* NAVIGATION BAR */
 
-nav {
+header {
     position: fixed;
     background-color: white;
     width: 100%;
@@ -145,7 +149,7 @@ nav {
 
 /* HERO IMAGE SECTION */
 
-header {
+.hero {
     background-color: #E1D6D0;
 }
 
@@ -157,34 +161,34 @@ header {
     margin: 0 auto;
 }
 
-header .flex-hero-content {
+.hero .flex-hero-content {
     width: 60%;
     margin: 64px 24px 32px 24px;
 }
 
-header .flex-hero-content img {
+.hero .flex-hero-content img {
     width: 100%;
     padding-top: 32px;
 }
 
-header .flex-header-container {
+.hero .flex-header-container {
     text-align: center;
     padding-top: 32px;
 }
 
-header .flex-header-container h1 {
+.hero .flex-header-container h1 {
     max-width: 350px;
     margin: 24px 0;
     text-align: left;
 }
 
-header .flex-header-container h2 {
+.hero .flex-header-container h2 {
     text-align: left;
     margin: 24px 0;
     max-width: 270px;
 }
 
-header .flex-header-container .button {
+.hero .flex-header-container .button {
     max-width: 270px;
     margin: 24px 0;
     
@@ -199,21 +203,21 @@ header .flex-header-container .button {
         flex-direction: column;
     }
     
-    header .flex-hero-content {
+    .hero .flex-hero-content {
         width: 100%;
         margin: 56px 0 0 0;
     }
     
-    header .flex-hero-content img {
+    .hero .flex-hero-content img {
         padding: 0;    
     }
     
-    header .flex-header-container {
+    .hero .flex-header-container {
         padding: 0;
         margin: 0 20px;
     }
     
-    header .flex-header-container h1 {
+    .hero .flex-header-container h1 {
         margin: 32px 0px;
         max-width: 100%;
     }
@@ -324,7 +328,7 @@ header .flex-header-container .button {
     .flex-column-content {
         display: flex;
         flex-direction: column;
-        padding-bottom: 64px; 
+        padding-bottom: 32px; 
         
     }
     
@@ -373,7 +377,6 @@ header .flex-header-container .button {
 
 .flex-box-lower-container h1 {
     text-align: center;
-    padding-bottom: 32px;
 }
 .flex-box-content-container {
     display: flex;
@@ -383,13 +386,20 @@ header .flex-header-container .button {
 }
 
 .flex-box-item {
-    margin: 0 32px;
-    max-width: 28%;
-    background-color: white;
+    margin: 32px 32px 0px 32px;
+    max-width: 25%;
+    background-color: #FEFEFE;
+    transition: background-color 500ms,
+                color 500ms;
 }
 
-.flex-box-item:nth-child(-n+3) {
-    margin-bottom: 32px;
+.flex-box-item:hover h3 {
+    color: #FEFEFE;
+}
+
+.flex-box-item:hover {
+    background-color: #0D3B66;
+    color: #FEFEFE;
 }
 
 .flex-box-item img {
@@ -405,15 +415,24 @@ header .flex-header-container .button {
 .flex-box-text h4,
 .flex-box-text p {
     margin: 8px 0;
+    
 }
 
 .flex-box-text h3 {
     margin-top: 0;
+    transition: color 500ms;
 }
 
 .flex-box-text p {
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 1100px) {
+    .flex-box-item {
+        max-width: 40%;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
     
