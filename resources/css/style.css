@@ -145,6 +145,14 @@ header {
         height: 4em;
     }
     
+    .flex-mobile-logo {
+        height: 42px;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 /* HERO IMAGE SECTION */
@@ -398,7 +406,7 @@ header {
 }
 
 .flex-box-item:hover {
-    background-color: #0D3B66;
+    background-color: #731963;
     color: #FEFEFE;
 }
 
