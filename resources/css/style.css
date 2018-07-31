@@ -405,6 +405,10 @@ header {
     color: #FEFEFE;
 }
 
+.flex-box-item:hover i {
+    color: #FEFEFE;
+}
+
 .flex-box-item:hover {
     background-color: #731963;
     color: #FEFEFE;
@@ -433,6 +437,10 @@ header {
 
 .flex-box-text p {
     margin-bottom: 0;
+}
+
+.flex-box-item i {
+    display: none;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -475,6 +483,17 @@ header {
     .flex-box-item img {
         display: none;
     }
+    
+    .flex-box-icon-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .flex-box-item i {
+        display: block;
+        color: #006494;
+}
+    
     
     .flex-box-text {
         max-width: 100%;
@@ -524,6 +543,8 @@ header {
     .flex-left-content {
         width: 100%;
     }
+    
+    #flex-column-lower,
     
     #hidden-lower-content {
         display: none;
