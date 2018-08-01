@@ -319,6 +319,8 @@ header {
     margin-bottom: 0;
 }
 
+/* 60/40 FIRST SPLIT CONTENT MOBILE STYLING */
+
 @media only screen and (max-width: 800px) {
     .flex-split-content-container {
         padding: 16px 16px 32px 16px;;
@@ -380,7 +382,7 @@ header {
 
 .flex-box-lower-container {
     background-color: #E1D6D0;
-    padding: 32px 0;
+    padding: 32px 0;    
 }
 
 .flex-box-lower-container h1 {
@@ -391,6 +393,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 72px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .flex-box-item {
@@ -443,12 +447,15 @@ header {
     display: none;
 }
 
+/* GALLERY SECTION TABLET STYLING */
+
 @media only screen and (max-width: 1100px) {
     .flex-box-item {
         max-width: 40%;
     }
 }
 
+/* GALLERY SECTION MOBILE STYLING */
 
 @media only screen and (max-width: 800px) {
     
@@ -476,6 +483,10 @@ header {
         border: 1px solid black;
     }
     
+    .flex-box-item:active {
+        
+    }
+    
     .flex-box-item:nth-child(-n+3) {
         margin-bottom: 8px;
     }
@@ -497,7 +508,7 @@ header {
     
     .flex-box-text {
         max-width: 100%;
-        padding: 16px 16px 24px 16px;
+        padding: 16px 16px 16px 16px;
     }
     
     .flex-box-text h3 {
@@ -533,6 +544,8 @@ header {
 #flex-column-lower {
     
 }
+
+/* LOWER VIDEO SECOND SPLIT MOBILE STYLING */
 
 @media only screen and (max-width: 800px) {
 
@@ -579,11 +592,13 @@ footer a {
     padding-right: 16px;
 }
 
+/* FOOTER MOBILE STYLING */
+
 @media only screen and (max-width: 800px) {
     
     .footer-content {
         padding: 16px 0 16px 16px;;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     
     .footer-content ul {
